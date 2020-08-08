@@ -19,13 +19,14 @@ body::-webkit-scrollbar-thumb {
   }
 .wrap{
     width: 80%;
-    height: 100vh;
+    height: 100%;
     margin: auto;
     padding: 0px 0px 20px 0px ;
 }
 .top-section{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
     align-items: center;
 }
@@ -73,12 +74,17 @@ body::-webkit-scrollbar-thumb {
     height: 500px;
     background: #fceae9;
     border-radius: 30px;
-    margin: 30px 0px 0px;
+    margin: 50px 0px;
     display: flex;
     align-items: center;
 }
+.tv-name{
+    font-size: 35px;
+    font-weight: normal;
+}
 .tv{
     padding: 0pc 5pc 0px 0px;
+    height: auto;
 }
 .left-item{
     margin: 50px;
@@ -104,7 +110,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cat{
-    margin: 10px 0px;
+    margin: 50px 0px;
 }
 .name{
     font-size: 30px;
@@ -115,6 +121,7 @@ body::-webkit-scrollbar-thumb {
 }
 .items-category{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0px;
 }
@@ -130,7 +137,7 @@ a{
     justify-content: space-between;
 }
 .watch{
-    background: linear-gradient(158deg, rgba(252,176,69,1) 29%, rgba(253,224,29,1) 63%);
+    background: linear-gradient(338deg, rgba(252,176,69,1) 29%, rgba(253,224,29,1) 63%);
 }
 .bag{
     background: linear-gradient(329deg, rgba(250,0,68,1) 0%, rgba(241,2,131,1) 71%);
@@ -153,14 +160,20 @@ a{
 }
 .product-shoe,.product-backpac{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.shoe-top, .backpack-top{
+.shoe-top{
     display: flex;
     justify-content: space-between;
-    margin: 20px 0px; 
+    margin: 80px 0px 50px; 
+}
+.backpack-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 180px 0px 100px ;
 }
 .see{
     text-decoration: none;
@@ -172,8 +185,6 @@ a{
 }
 .item-shoe,.item-backpack{
     width: 320px;
-    height: 450px;
-    /* background: rgb(231, 32, 32); */
     border-radius: 15px;
 }
 .item-shoe:hover, .item-backpack:hover{
@@ -223,6 +234,8 @@ a{
     margin: 45px 0px 50px;
 }
 .footer-section{
+    margin-top: auto;
+    margin-bottom: 0px;
     height: 250px;
     background: #fceae9;
     margin: 50px 0px;
@@ -274,13 +287,13 @@ a{
 }
 
 @media (max-width: 1100px){
-    .top-section{
+    /* .top-section{
         flex-direction: column;
         margin: 20px;
     }
     .list-menu{
         padding: 15px;
-    }
+    } */
     .tv{
         width: 100%;
         height: min-content;
@@ -291,32 +304,5 @@ a{
         height: 700px;
         margin: auto;
         flex-direction: column;  
-    }
-    .items-category{
-        width: 500px ;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 20px 0px;
-    }
-    .watch, .bag, .shoe{
-        height: 80px;
-        width: 150px;
-    }
-    .watch img, .bag img, .shoe img{
-        height: 70px;
-        margin-right: 10px;
-    }
-    .shoe img{
-        margin-left: -20px;
-    }
-    .tag{
-        margin-left: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        color: white;
-    }
-    .product-shoe,.product-backpac{
-        flex-direction: column;
     }
 }
