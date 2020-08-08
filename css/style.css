@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif, helvetica;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #f4086e;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background: #ff9dc8;
+  }
+.wrap{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding: 0px 0px 20px 0px ;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.top-section .search{
+    position: relative;
+}
+.top-section .search input{ 
+    padding-left: 15px;
+    height: 30px;
+    font-size: 18pxpx;
+    width: 450px;
+    border: none;
+    background: rgb(231, 231, 231);
+    border-radius: 20px;
+}
+.top-section .search input:focus{
+    outline: none;
+    background: white;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+.icon-search{
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    color: #9c9c9c;
+}
+.list-menu{
+    list-style: none;
+    display: flex;
+}
+.list-menu li{
+    padding-left: 25px;
+}
+.list-menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #868686;
+    transition: .5s ease;
+}
+.list-menu a:hover{
+    color: #000000;
+}
+.large-ad{
+    width: 80vw;
+    height: 500px;
+    background: #fceae9;
+    border-radius: 30px;
+    margin: 30px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.tv{
+    padding: 0pc 5pc 0px 0px;
+}
+.left-item{
+    margin: 50px;
+}
+.description{
+    font-family: Helvetica, sans-serif;
+    line-height: 30px;
+}
+.price{
+    color: #f4086e;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.btn{
+    color: white;
+    background: #f4086e;
+    border: 1px solid #f4086e;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cat{
+    margin: 10px 0px;
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+}
+.category-wrap{
+    padding: 20px 0px;
+}
+.items-category{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+a{
+    text-decoration: none;
+}
+.watch, .bag, .shoe{
+    height: 133px;
+    width: 320px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.watch{
+    background: linear-gradient(158deg, rgba(252,176,69,1) 29%, rgba(253,224,29,1) 63%);
+}
+.bag{
+    background: linear-gradient(329deg, rgba(250,0,68,1) 0%, rgba(241,2,131,1) 71%);
+}
+.shoe{
+    background: linear-gradient(156deg, rgba(120,164,254,1) 0%, rgba(45,0,222,1) 100%);  
+}
+.watch img, .bag img, .shoe img{
+    height: 110px;
+    margin-right: 30px;
+}
+.tag{
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.watch:hover, .bag:hover, .shoe:hover{
+    box-shadow: 0px 0px 20px rgb(172, 168, 168);
+}
+.product-shoe,.product-backpac{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.shoe-top, .backpack-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px; 
+}
+.see{
+    text-decoration: none;
+    color: rgb(207, 177, 7);
+    font-weight: bolder;
+}
+.see:hover{
+    color: rgb(44, 255, 185);
+}
+.item-shoe,.item-backpack{
+    width: 320px;
+    height: 450px;
+    /* background: rgb(231, 32, 32); */
+    border-radius: 15px;
+}
+.item-shoe:hover, .item-backpack:hover{
+    box-shadow: 0px 0px 20px rgb(172, 168, 168);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content img{
+    margin: 0;
+    padding: 0;
+    height: 300px;
+}
+.item-name{
+    margin: -50px 0px 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.item-details{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 25px;
+}
+.item-price{
+    font-weight: bold;
+    padding: 20px 0px;
+}
+.buy{
+    background: black;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+.buy:hover{
+    background: rgb(83, 76, 76);
+    cursor: pointer;
+}
+.first-shoe img, .item-backpack img{
+    height: 200px;
+    margin: 45px 0px 50px;
+}
+.footer-section{
+    height: 250px;
+    background: #fceae9;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.stay{
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0px 0px 10px;
+}
+.foot-form input{
+    font-size: 20px;
+    padding: 0px 15px;
+    line-height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid transparent; */
+    border: none;
+}
+.foot-form input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px rgb(255, 127, 202); 
+}
+.send{
+    font-size: 20px;
+    background: #f4086e;
+    border: none;
+    padding: 0px 15px;
+    line-height: 30px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s ease all;
+}
+.send:hover, .btn:hover{
+    /* background: #ff509c; */
+    background: linear-gradient(329deg, rgb(255, 158, 184) 0%, rgb(255, 57, 116) 71%);
+    box-shadow: 0px 0px 15px rgb(255, 127, 202);
+    cursor: pointer;
+}
+.my-text{
+    text-align: center;
+    padding: 0px 0px 20px;
+}
+
+@media (max-width: 1100px){
+    .top-section{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .list-menu{
+        padding: 15px;
+    }
+    .tv{
+        width: 100%;
+        height: min-content;
+        order: -1
+    }
+    .large-ad{
+        width: 500px;
+        height: 700px;
+        margin: auto;
+        flex-direction: column;  
+    }
+    .items-category{
+        width: 500px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+    .watch, .bag, .shoe{
+        height: 80px;
+        width: 150px;
+    }
+    .watch img, .bag img, .shoe img{
+        height: 70px;
+        margin-right: 10px;
+    }
+    .shoe img{
+        margin-left: -20px;
+    }
+    .tag{
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+    .product-shoe,.product-backpac{
+        flex-direction: column;
+    }
+}
